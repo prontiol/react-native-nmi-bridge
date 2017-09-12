@@ -1,0 +1,27 @@
+{
+  "name": "react-native-nmi-bridge",
+  "version": "1.0.0",
+  "description": "React Native NMI Bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transisland/react-native-nmi-bridge.git"
+  },
+  "keywords": [
+    "react-native",
+    "nmi"
+  ],
+  "author": "Denys Mikhalenko <denys@prontiol.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/transisland/react-native-nmi-bridge/issues"
+  },
+  "homepage": "https://github.com/transisland/react-native-nmi-bridge#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
