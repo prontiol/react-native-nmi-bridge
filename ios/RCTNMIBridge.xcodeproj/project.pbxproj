@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D72D2EC1C16249000E22EC1 /* RCTNMIBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D72D2EB1C16249000E22EC1 /* RCTNMIBridge.h */; };
 		5D72D2EE1C16249000E22EC1 /* RCTNMIBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D72D2ED1C16249000E22EC1 /* RCTNMIBridge.m */; };
+		693511D11F56FACC00A65DA3 /* PGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 693511D01F56FACC00A65DA3 /* PGMobileSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		5D72D2E81C16249000E22EC1 /* libRCTNMIBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTNMIBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D72D2EB1C16249000E22EC1 /* RCTNMIBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNMIBridge.h; sourceTree = "<group>"; };
 		5D72D2ED1C16249000E22EC1 /* RCTNMIBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNMIBridge.m; sourceTree = "<group>"; };
+		693511CF1F56FACC00A65DA3 /* PGMobileSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PGMobileSDK; path = "Payment Gateway SDK/PGMobileSDK"; sourceTree = "<group>"; };
+		693511D01F56FACC00A65DA3 /* PGMobileSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PGMobileSDK.a; path = "Payment Gateway SDK/PGMobileSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693511D11F56FACC00A65DA3 /* PGMobileSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,8 @@
 		5D72D2DF1C16249000E22EC1 = {
 			isa = PBXGroup;
 			children = (
+				693511CF1F56FACC00A65DA3 /* PGMobileSDK */,
+				693511D01F56FACC00A65DA3 /* PGMobileSDK.a */,
 				5D72D2EA1C16249000E22EC1 /* RCTNMIBridge */,
 				5D72D2E91C16249000E22EC1 /* Products */,
 			);
@@ -219,8 +225,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Payment Gateway SDK\"",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Payment\\ Gateway\\ SDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -234,8 +245,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Payment Gateway SDK\"",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Payment\\ Gateway\\ SDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

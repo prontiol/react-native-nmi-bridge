@@ -1,3 +1,4 @@
+#import "PGMobileSDK/PGMobileSDK.h"
 #import "RCTNMIBridge.h"
 
 @implementation NMIBridge
