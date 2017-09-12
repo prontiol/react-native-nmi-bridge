@@ -1,4 +1,4 @@
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 
 @interface NMIBridge : NSObject <RCTBridgeModule>
 
