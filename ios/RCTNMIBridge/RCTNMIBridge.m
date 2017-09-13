@@ -5,11 +5,21 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_REMAP_METHOD(nmiBridge,
-                 resolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXPORT_METHOD(encryptCardData
+                  :(NSString *)key
+                  :(NSString *)cardNumber
+                  :(NSString *)expirationData
+                  :(NSString *)cvv
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-    resolve(@"Hello World!");
+    PGEncrypt *encryption = [[PGEncrypt alloc] init];
+    [encryption setKey:key];
+    PGCard *cardData = [[PGKeyedCard alloc] initWithCardNumber:cardNumber
+                                                expirationDate:expirationData
+                                                           cvv:cvv];
+    NSString *encryptedCardData = [encryption encrypt:cardData includeCVV:YES];
+    resolve(encryptedCardData);
 }
 
 @end
