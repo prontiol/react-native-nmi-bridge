@@ -99,7 +99,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Atticus White";
+				ORGANIZATIONNAME = Hippo;
 				TargetAttributes = {
 					5D72D2E71C16249000E22EC1 = {
 						CreatedOnToolsVersion = 7.1.1;
