@@ -5,6 +5,6 @@
       location = "group:../node_modules/react-native/React/React.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:RCTNMIBridge.xcodeproj">
+      location = "container:RNNMIBridge.xcodeproj">
    </FileRef>
 </Workspace>
