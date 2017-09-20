@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5D72D2E31C16249000E22EC1 /* Build configuration list for PBXProject "RNNmiBridge" */;
+			buildConfigurationList = 5D72D2E31C16249000E22EC1 /* Build configuration list for PBXProject "RNNMIBridge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -214,7 +213,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -263,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D72D2E31C16249000E22EC1 /* Build configuration list for PBXProject "RNNmiBridge" */ = {
+		5D72D2E31C16249000E22EC1 /* Build configuration list for PBXProject "RNNMIBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D72D2EF1C16249000E22EC1 /* Debug */,
