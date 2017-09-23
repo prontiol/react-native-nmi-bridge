@@ -8,7 +8,7 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(encryptCardData
                   :(NSString *)key
                   :(NSString *)cardNumber
-                  :(NSString *)expirationData
+                  :(NSString *)expirationDate
                   :(NSString *)cvv
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
@@ -16,7 +16,7 @@ RCT_EXPORT_METHOD(encryptCardData
     PGEncrypt *encryption = [[PGEncrypt alloc] init];
     [encryption setKey:key];
     PGCard *cardData = [[PGKeyedCard alloc] initWithCardNumber:cardNumber
-                                                expirationDate:expirationData
+                                                expirationDate:expirationDate
                                                            cvv:cvv];
     NSString *encryptedCardData = [encryption encrypt:cardData includeCVV:YES];
     resolve(encryptedCardData);
