@@ -29,7 +29,13 @@ class NMIBridgeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void encryptCardData(String key, String cardNumber, String expirationDate, String cvv) {
+    public void encryptCardData(
+            String key,
+            String cardNumber,
+            String expirationDate,
+            String cvv,
+            Promise promise
+    ) {
         try {
             PGEncrypt pg = new PGEncrypt();
             pg.setKey(key);
