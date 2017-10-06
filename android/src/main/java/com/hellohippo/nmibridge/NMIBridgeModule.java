@@ -42,7 +42,7 @@ class NMIBridgeModule extends ReactContextBaseJavaModule {
             PGKeyedCard card = new PGKeyedCard(cardNumber, expirationDate, cvv);
             String encryptedCardData = pg.encrypt(card, true);
             promise.resolve(encryptedCardData);
-        } catch (IllegalViewOperationException e) {
+        } catch (Exception e) {
             promise.reject("Error encrypting card data", e);
         }
     }
